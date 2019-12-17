@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <div class="InterfaceContainer">
+        <div class="HeadContainer">
+            <button id="ExitButton">X</button>
+            <h1 id="MainTitle">Coding Quiz!</h1>
+            <button id="SoundButton">🔊</button>
+        </div>
+        <div id="MainContainer" class="MainContainer">
+            <h2>Select quiz category:</h2>
+            <div class="CategoryContainer">
+                <button class="Cat" id="Html">Html</button>
+                <button class="Cat" id="CSS">CSS</button>
+                <button class="Cat" id="JavaScript">JavaScript</button>
+            </div>
+            <h2>Select quiz difficulty:</h2>
+            <div class="ModeContainer">
+                <button class="Mode" id="Easy">Easy</button>
+                <button class="Mode" id="Medium">Medium</button>
+                <button class="Mode" id="Hard">Hard</button>
+            </div>
+            <div class="PlayContainer">
+                <button id="PlayButton">Play</button>
+            </div>
+            <div class="MainResultContainer">
+                <h2 id="LastScore">Your last score : 0</h3>
+                    <h2 id="BestScore">Your best score : 0</h3>
+            </div>
+        </div>
+        <div style="display: none;" class="QuizContainer">
+            <div class="ScoreContainer">
+                <span id="Progress">1/10</span>
+                <div>
+                    <span id="CurrentScore">0</span>
+                    <img id="scoreIcon" alt="score_icon" src="./Images/score_icon.png">
+                </div>
+            </div>
+            <div class="QuestionContainer">
+                <p id="CurrentQuestion">This is a sample question just for tests ok yea noasdasd asd a</p>
+            </div>
+            <div class="AnswersContainer">
+
+                <button class="AnswerButton" id="Answer1">Answer1</button>
+                <button class="AnswerButton" id="Answer2">Answer2</button>
+            </div>
+            <div class="AnswersContainer">
+                <button class="AnswerButton" id="Answer3">Answer3</button>
+                <button class="AnswerButton" id="Answer4">Answer4</button>
+            </div>
+            <div class="SubmitButtonContainer">
+                <button class="SubmitButton" id="SubmitAnswer">Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
