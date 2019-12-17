@@ -3,11 +3,6 @@ body {
     padding: 0;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 1;
-}
-
 .InterfaceContainer {
     margin: 0 auto;
     width: 400px;
@@ -36,13 +31,9 @@ button:hover {
     display: inline;
 }
 
-#ExitButton {
-    visibility: hidden;
+.active {
+    background-color: #771177;
 }
-
-#MainTitle {}
-
-#SoundButton {}
 
 .MainContainer,
 .QuizContainer {
