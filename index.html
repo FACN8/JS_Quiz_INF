@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <script src="Script.js"></script>
+    <title>A quiz to test your fullstack knowledge!</title>
 </head>
 
 <body>
     <div class="InterfaceContainer">
         <div class="HeadContainer">
-            <button style="visibility: hidden" id="ExitButton" onclick="Restart();">X</button>
+            <button style="visibility: hidden" id="ExitButton" onclick="restart();">X</button>
             <h1 id="MainTitle">Coding Quiz!</h1>
-            <button id="SoundButton">🔊</button>
+            <button id="SoundButton" onclick="muteUnMute()">🔊</button>
         </div>
         <div style="" id="MainContainer" class="MainContainer">
             <h2 style="color: limegreen;">Select quiz category:</h2>
@@ -58,13 +59,16 @@
             </div>
         </div>
         <div style="display: none;" id="ResultContainer" class="ResultContainer">
-        <h1 id="scoreTitle">Your score is</h1>
+        <h1 id="scoreTitle">Correct answers:</h1>
         <h1 id="resultScore" >0</h1>
-        <button id="returnHomeButton" onclick="Restart();">🏠</button>
-        <button id="restartButton" onclick="RestartLevel();">Restart</button>
+        <button id="returnHomeButton" onclick="restart();">🏠</button>
+        <button id="restartButton" onclick="restartLevel();">restart</button>
         </div>
     </div>
-
+    <audio controls>
+        <source src="./Audio/background-music.mp3" type="audio/wav">
+        
+      </audio>
 </body>
 
 
