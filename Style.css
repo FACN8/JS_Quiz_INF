@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     width: 400px;
     height: 700px;
-    background-color:tomato;
+    background-image : url("./Images/background.png");
     border: 2px solid black;
     border-radius: 22px;
 }
@@ -20,6 +20,7 @@ body {
     border-radius: 22px;
     display: flex;
     justify-content: space-between;
+   
 }
 
 #ExitButton,
@@ -29,18 +30,18 @@ body {
     border: 0;
     font-size: 40px;
     display: inline;
+    color: limegreen;
 }
 
-.active {
-    background-color: rgb(255, 187, 0);
-}
+
 
 .MainContainer,
-.QuizContainer {
+.QuizContainer,.ResultContainer {
     width: auto;
     height: auto;
     margin-top: 5px;
-    /*background-color: violet;*/
+    background-image : url("./Images/background.png");
+    
 }
 
 .CategoryContainer,
@@ -54,23 +55,24 @@ body {
     font-size: 35px;
     padding: 5px;
     margin: 3px;
+    color: limegreen;
+    background: transparent;
+    
 }
 
 .PlayContainer {
     margin-top: 50px;
     text-align: center;
-    background-color: aliceblue;
-}
-
-.MainResultContainer {
-    width: 70%;
-    border: 2px solid black;
-    margin: 30px auto 0 auto;
-    text-align: center;
+    
 }
 
 #PlayButton {
     font-size: 60px;
+    color: limegreen;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 .ScoreContainer {
@@ -79,8 +81,9 @@ body {
 }
 
 #CurrentScore,
-#Progress {
+#Progress,#timer {
     font-size: 50px;
+    color:	#F09A93;
 }
 
 #scoreIcon {
@@ -93,13 +96,14 @@ body {
     height: auto;
     margin: 10px auto;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid limegreen;
 }
 
 #CurrentQuestion {
     padding: 4px;
     font-size: 24px;
     font-style: italic;
+    color: limegreen;
 }
 
 .AnswersContainer {
@@ -108,15 +112,54 @@ body {
 }
 
 .AnswerButton {
+    width: 40%;
     margin: 18px;
     font-size: 26px;
+    color: limegreen;
+    background: transparent;
+    border-radius: 16px;
 }
 
 .SubmitButtonContainer {
     margin-top: 50px;
     text-align: center;
+    
 }
 
 #SubmitAnswer {
     font-size: 50px;
+    color: limegreen;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
 }
+
+
+/* Result screen CSS */
+
+.ResultContainer {
+
+text-align: center;
+color: limegreen;
+font-size: 35px;
+}
+
+#returnHomeButton,#restartButton {
+    font-size: 44px;
+    color: limegreen;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 15px;
+    margin:15px;
+
+}
+
+
+.active {
+    background:rgb(8, 8, 8);   
+}
+
+

@@ -10,18 +10,18 @@
 <body>
     <div class="InterfaceContainer">
         <div class="HeadContainer">
-            <button style="visibility: hidden" id="ExitButton" onclick="showMain();">X</button>
+            <button style="visibility: hidden" id="ExitButton" onclick="Restart();">X</button>
             <h1 id="MainTitle">Coding Quiz!</h1>
             <button id="SoundButton">🔊</button>
         </div>
-        <div id="MainContainer" class="MainContainer">
-            <h2>Select quiz category:</h2>
+        <div style="" id="MainContainer" class="MainContainer">
+            <h2 style="color: limegreen;">Select quiz category:</h2>
             <div class="CategoryContainer">
                 <button class="Cat active" id="Html" onclick="selectCat(0)">Html</button>
                 <button class="Cat" id="CSS" onclick="selectCat(1)">CSS</button>
                 <button class="Cat" id="JavaScript" onclick="selectCat(2)">JavaScript</button>
             </div>
-            <h2>Select quiz difficulty:</h2>
+            <h2 style="color: limegreen;">Select quiz difficulty:</h2>
             <div class="ModeContainer">
                 <button class="Mode active" id="Easy" onclick="selectMode(0)">Easy</button>
                 <button class="Mode" id="Medium" onclick="selectMode(1)">Medium</button>
@@ -30,14 +30,12 @@
             <div class="PlayContainer">
                 <button id="PlayButton" onclick=startQuiz();>Play</button>
             </div>
-            <div class="MainResultContainer">
-                <h2 id="LastScore">Your last score : 0</h3>
-                    <h2 id="BestScore">Your best score : 0</h3>
-            </div>
+        
         </div>
         <div style="display: none;" id="QuizContainer" class="QuizContainer">
             <div class="ScoreContainer">
                 <span id="Progress">1/3</span>
+                <span id="timer">0</span>
                 <div>
                     <span id="CurrentScore">0</span>
                     <img id="scoreIcon" alt="score_icon" src="./Images/score_icon.png">
@@ -58,7 +56,12 @@
             <div class="SubmitButtonContainer">
                 <button class="SubmitButton" id="SubmitAnswer" onclick="checkAns()">Submit</button>
             </div>
-
+        </div>
+        <div style="display: none;" id="ResultContainer" class="ResultContainer">
+        <h1 id="scoreTitle">Your score is</h1>
+        <h1 id="resultScore" >0</h1>
+        <button id="returnHomeButton" onclick="Restart();">🏠</button>
+        <button id="restartButton" onclick="RestartLevel();">Restart</button>
         </div>
     </div>
 
