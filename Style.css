@@ -1,4 +1,5 @@
 body {
+    background-image : url("./Images/body_background.jpg");
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,7 @@ body {
     width: 400px;
     height: 700px;
     background-image : url("./Images/background.png");
-    border: 2px solid black;
+    border: 2px solid wheat;
     border-radius: 22px;
 }
 
@@ -16,7 +17,6 @@ body {
     width: 400px;
     height: auto;
     margin: 0 auto;
-   /* background-color: salmon;*/
     border-radius: 22px;
     display: flex;
     justify-content: space-between;
@@ -163,4 +163,7 @@ font-size: 35px;
     color: black; 
 }
 
+button:hover {
+    cursor: pointer ;
+}
 
