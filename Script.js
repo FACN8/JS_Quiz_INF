@@ -2,16 +2,18 @@ let title = "Html";
 let Answer = "";
 let QuestNumber = 1;
 let score = 0,
-    cat = 0;
+    cat = 0,
+    mode = 0;
+
 var htmlQuestions = [{
-        question: "What is your name?",
-        options: ["Najwan", "hello", "asdas", "dadaass"],
-        correctAnswer: "Najwan"
+        question: "What is html?",
+        options: ["Najwan", "Programing language", "html", "dadaass"],
+        correctAnswer: "html"
     },
     {
-        question: "What is the time ?",
-        options: ["Najwan", "hello", "never", "dadaass"],
-        correctAnswer: "never"
+        question: "What is html used for? ?",
+        options: ["Tea", "Document structuring", "never", "dadaass"],
+        correctAnswer: "structuring"
     },
     {
         question: "What is life ?",
@@ -21,9 +23,9 @@ var htmlQuestions = [{
 
 ]
 var CssQuestions = [{
-        question: "What is your age?",
-        options: ["Najwan", "hello", "asdas", "dadaass"],
-        correctAnswer: "Najwan"
+        question: "What is the main usage for css?",
+        options: ["Najwan", "Document styling", "asdas", "dadaass"],
+        correctAnswer: "Document styling"
     },
     {
         question: "What is the time ?",
@@ -38,9 +40,9 @@ var CssQuestions = [{
 
 ]
 var JsQuestions = [{
-        question: "What is your code?",
-        options: ["Najwan", "hello", "asdas", "dadaass"],
-        correctAnswer: "Najwan"
+        question: "What is JS?",
+        options: ["Najwan", "Java Script", "asdas", "dadaass"],
+        correctAnswer: "Java Script"
     },
     {
         question: "What is the time ?",
@@ -61,6 +63,7 @@ function startQuiz() {
     document.getElementById("QuizContainer").style = "";
     document.getElementById("ExitButton").style = "";
     document.getElementById("MainTitle").innerHTML = title;
+    LoadQustion(cat);
 }
 
 
@@ -84,12 +87,11 @@ function selectCat(n) {
         Catbutton[i].className = Catbutton[i].className.replace(" active", "");
     }
     Catbutton[n].className += " active";
-    LoadQustion(n);
     cat = n;
     title = Catbutton[n].innerHTML;
 }
 
-
+// Add a fix to stop if no answer is selected
 function selectAns(n) {
     let Ansbutton = document.getElementsByClassName("AnswerButton")
     for (var i = 0; i < Ansbutton.length; i++) {
@@ -129,4 +131,8 @@ function Restart() {
     document.getElementById("CurrentScore").innerHTML = score;
     QuestNumber = 1;
     document.getElementById("Progress").innerHTML = QuestNumber + "/3";
+}
+// end quiz,show your score and time , adjust last + best score
+function quizEnd () {
+
 }
