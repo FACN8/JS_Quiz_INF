@@ -138,7 +138,7 @@ function checkAns() {
     if (Answer == CurrentAnswer) {
         score++;
         document.getElementById("CurrentScore").innerHTML = score;
-        alert("Correct!")
+        
 
     }
     if (QuestNumber >= 3) { quizEnd(); } else {

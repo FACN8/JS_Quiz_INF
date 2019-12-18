@@ -159,7 +159,8 @@ font-size: 35px;
 
 
 .active {
-    background:rgb(8, 8, 8);   
+    background:gold;  
+    color: black; 
 }
 
 
